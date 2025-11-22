@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+/* ---------- TOP BAR ---------- */
+.topbar {
+    width: 100%;
+    background: #fafafa;
+    padding: 6px 7%;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    width: 100%;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.logo {
+    height: 42px;
+    margin-right: 20px;
+}
+
+.nav-left a,
+.dropdown {
+    font-size: 15px;
+    color: #222;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-left a:hover,
+.dropdown:hover {
+    color: #00743f;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.quote-btn {
+    background: #1f8e44;
+    border: none;
+    padding: 10px 22px;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.horizon {
+    height: 40px;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 92vh;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-text {
+    position: absolute;
+    top: 32%;
+    left: 9%;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero-text p {
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 1.55;
+    opacity: 0.9;
+}
+
+.know-btn {
+    margin-top: 28px;
+    padding: 13px 28px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+/* ---------- ARROWS ---------- */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    padding: 12px 16px;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.left {
+    left: 25px;
+}
+
+.right {
+    right: 25px;
+}
+
+/* ---------- PRODUCT IMAGE ---------- */
+.product-img {
+    position: absolute;
+    right: 8%;
+    bottom: 5%;
+    height: 420px;
+}
+
+/* ---------- FLOATING ICONS ---------- */
+.floating-icons {
+    position: fixed;
+    right: 22px;
+    bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.floating-icons div {
+    width: 55px;
+    height: 55px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
